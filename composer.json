@@ -1,6 +1,6 @@
 {
     "name": "shift31/hostbase-importer-softlayer",
-    "description": "Imports SoftLayer host information into hostbase",
+    "description": "Imports SoftLayer host information into Hostbase",
     "minimum-stability": "dev",
     "authors": [
         {

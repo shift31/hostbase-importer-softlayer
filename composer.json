@@ -1,0 +1,23 @@
+{
+    "name": "shift31/hostbase-importer-softlayer",
+    "description": "Imports SoftLayer host information into hostbase",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Shift 31 Consulting",
+            "email": "code@shift31.com"
+        }
+    ],
+    "License": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/shift31/softlayer-api-php-client"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "shift31/softlayer-api-php-client": "dev-master",
+        "shift31/hostbase-api-client": "dev-master"
+    }
+}

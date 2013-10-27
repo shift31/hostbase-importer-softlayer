@@ -19,5 +19,10 @@
         "php": ">=5.3.3",
         "shift31/softlayer-api-php-client": "dev-master",
         "shift31/hostbase-api-client": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Hostbase": "lib"
+        }
     }
 }

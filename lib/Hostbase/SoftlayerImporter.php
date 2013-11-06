@@ -81,8 +81,13 @@ class SoftlayerImporter {
 					'processorName' => $host->processors[0]->hardwareComponentModel->name,
 					'processorVersion' => $host->processors[0]->hardwareComponentModel->version,
 					'operatingSystem' => $host->operatingSystem->softwareLicense->softwareDescription->longDescription,
+					'adminCredentials' => array(
+						'username' => $host->operatingSystem->passwords[0]->username,
+						'password' => $host->operatingSystem->passwords[0]->password
+					),
 					'primaryPrivateIpAddress' => $host->primaryBackendIpAddress,
 					'primaryPublicIpAddress' => $host->primaryIpAddress,
+					'is_virtual' => false
 				);
 
 				echo "Importing $fqdn...";
@@ -140,6 +145,7 @@ class SoftlayerImporter {
 					'operatingSystem' => $host->operatingSystem->softwareLicense->softwareDescription->longDescription,
 					'primaryPrivateIpAddress' => $host->primaryBackendIpAddress,
 					'primaryPublicIpAddress' => $host->primaryIpAddress,
+					'is_virtual' => true
 				);
 
 				echo "Importing $fqdn...";
@@ -179,7 +185,6 @@ class SoftlayerImporter {
 		$subnets = array_merge($privateSubnets, $publicSubnets);
 
 		foreach ($subnets as $subnet) {
-			if ($subnet->subnetType == 'Primary') continue; // skip PRIMARY subnets (these are reserved for hardware)
 
 			$subnetData = array(
 				'network'                   => $subnet->networkIdentifier,
@@ -192,6 +197,13 @@ class SoftlayerImporter {
 				'softlayerId'               => $subnet->id,
 				'softlayerRouterHostname'   => $subnet->routerHostname,
 			);
+
+			// tag PRIMARY subnets (these are reserved for hardware)
+			if ($subnet->subnetType == 'Primary') {
+				$subnetData['isReserved'] = true;
+			} else {
+				$subnetData['isReserved'] = false;
+			}
 
 			if (isset($subnet->note)) $subnetData['note'] = trim($subnet->note);
 
@@ -222,9 +234,6 @@ class SoftlayerImporter {
 
 			foreach ($subnetIpAddresses as $subnetIpAddress) {
 
-				// skip reserved IPs
-				if ($subnetIpAddress->status == 'Reserved') continue;
-
 				$ipAddress = $subnetIpAddress->ipAddress;
 
 				$ipAddressData = array(
@@ -232,6 +241,13 @@ class SoftlayerImporter {
 					'ipAddress'     => $ipAddress,
 					'softlayerId'   => $subnetIpAddress->id
 				);
+
+				// tag reserved IPs
+				if ($subnetIpAddress->status == 'Reserved') {
+					$ipAddressData['isReserved'] = true;
+				} else {
+					$ipAddressData['isReserved'] = false;
+				}
 
 				if (isset($subnetIpAddress->note)) $ipAddressData['note'] = trim($subnetIpAddress->note);
 

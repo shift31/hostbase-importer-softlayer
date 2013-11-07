@@ -138,7 +138,7 @@ class SoftlayerImporter {
 				$fqdn = $host->fullyQualifiedDomainName;
 				$data = array(
 					'fqdn' => $fqdn,
-					'datacenter' => $host->datacenter->name,
+					'dataCenter' => $host->datacenter->name,
 					'serverRoom' => $host->serverRoom->name,
 					'memoryCapacity' => $host->maxMemory / 1024,
 					'processorCount' => $host->maxCpu,
@@ -197,6 +197,10 @@ class SoftlayerImporter {
 				'softlayerId'               => $subnet->id,
 				'softlayerRouterHostname'   => $subnet->routerHostname,
 			);
+
+			// set datacenter from router hostname
+			$routerHostnameParts = explode('.', $subnet->routerHostname);
+			$subnetData['datacenter'] = array_pop($routerHostnameParts);
 
 			// tag PRIMARY subnets (these are reserved for hardware)
 			if ($subnet->subnetType == 'Primary') {

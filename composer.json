@@ -1,7 +1,6 @@
 {
     "name": "shift31/hostbase-importer-softlayer",
     "description": "Imports SoftLayer host information into Hostbase",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Shift 31 Consulting",
@@ -24,5 +23,10 @@
         "psr-0": {
             "Hostbase": "lib"
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

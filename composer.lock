@@ -1,0 +1,127 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "2edcb6a3e44501bfb88f11b8cf866d74",
+    "packages": [
+        {
+            "name": "nategood/httpful",
+            "version": "0.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "3d0eb210457d5ca32be31892b4c198e0df97ffbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/3d0eb210457d5ca32be31892b4c198e0df97ffbe",
+                "reference": "3d0eb210457d5ca32be31892b4c198e0df97ffbe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "time": "2013-09-13 19:27:17"
+        },
+        {
+            "name": "shift31/hostbase-api-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shift31/hostbase-api-client-php.git",
+                "reference": "e7bfba264eca3ca5547592a69f3f9092c3bf6fba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/e7bfba264eca3ca5547592a69f3f9092c3bf6fba",
+                "reference": "e7bfba264eca3ca5547592a69f3f9092c3bf6fba",
+                "shasum": ""
+            },
+            "require": {
+                "nategood/httpful": "0.2.10",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Shift31": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Hostbase API Client Library for PHP",
+            "time": "2014-01-08 23:13:32"
+        },
+        {
+            "name": "shift31/softlayer-api-php-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shift31/softlayer-api-php-client",
+                "reference": "794be51d0c12b30d3893ac6295066863839fcaa3"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SoftLayer": "/"
+                }
+            },
+            "description": "A fork of softlayer/softlayer-api-php-client supporting namespaces and composer",
+            "time": "2013-07-13 01:31:58"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "shift31/softlayer-api-php-client": 20,
+        "shift31/hostbase-api-client": 20
+    },
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": [
+
+    ]
+}

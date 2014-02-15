@@ -7,16 +7,16 @@
     "packages": [
         {
             "name": "nategood/httpful",
-            "version": "0.2.10",
+            "version": "0.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nategood/httpful.git",
-                "reference": "3d0eb210457d5ca32be31892b4c198e0df97ffbe"
+                "reference": "0bf1423028abe2f630e1d2ef8d62486d6655b2f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nategood/httpful/zipball/3d0eb210457d5ca32be31892b4c198e0df97ffbe",
-                "reference": "3d0eb210457d5ca32be31892b4c198e0df97ffbe",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/0bf1423028abe2f630e1d2ef8d62486d6655b2f3",
+                "reference": "0bf1423028abe2f630e1d2ef8d62486d6655b2f3",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "rest",
                 "restful"
             ],
-            "time": "2013-09-13 19:27:17"
+            "time": "2013-10-20 11:03:40"
         },
         {
             "name": "shift31/hostbase-api-client",
@@ -61,16 +61,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shift31/hostbase-api-client-php.git",
-                "reference": "e7bfba264eca3ca5547592a69f3f9092c3bf6fba"
+                "reference": "6ee86c6ef8ac39b1da10249658b93dec96a39c65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/e7bfba264eca3ca5547592a69f3f9092c3bf6fba",
-                "reference": "e7bfba264eca3ca5547592a69f3f9092c3bf6fba",
+                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/6ee86c6ef8ac39b1da10249658b93dec96a39c65",
+                "reference": "6ee86c6ef8ac39b1da10249658b93dec96a39c65",
                 "shasum": ""
             },
             "require": {
-                "nategood/httpful": "0.2.10",
+                "nategood/httpful": "0.2.11",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -84,7 +84,7 @@
                 "MIT"
             ],
             "description": "The Hostbase API Client Library for PHP",
-            "time": "2014-01-08 23:13:32"
+            "time": "2014-02-15 22:46:57"
         },
         {
             "name": "shift31/softlayer-api-php-client",

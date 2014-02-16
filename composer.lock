@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2edcb6a3e44501bfb88f11b8cf866d74",
+    "hash": "ae54d2759cfd3f1c35be8fefb7ce5c60",
     "packages": [
         {
             "name": "nategood/httpful",
@@ -61,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shift31/hostbase-api-client-php.git",
-                "reference": "aa2582be57ef3a9c46df62c8cfc027d0870762b6"
+                "reference": "b47a9164b2469b6fbd3b342bc468f829efd63b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/aa2582be57ef3a9c46df62c8cfc027d0870762b6",
-                "reference": "aa2582be57ef3a9c46df62c8cfc027d0870762b6",
+                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/b47a9164b2469b6fbd3b342bc468f829efd63b93",
+                "reference": "b47a9164b2469b6fbd3b342bc468f829efd63b93",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "MIT"
             ],
             "description": "The Hostbase API Client Library for PHP",
-            "time": "2014-02-16 10:50:20"
+            "time": "2014-02-16 11:13:12"
         },
         {
             "name": "shift31/softlayer-api-php-client",
@@ -119,7 +119,7 @@
         "shift31/hostbase-api-client": 20
     },
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.3"
     },
     "platform-dev": [
 

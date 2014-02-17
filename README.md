@@ -2,11 +2,12 @@
 
 ## Installation
 
-Download/clone this whole repository or install with `composer create-project shift31/hostbase-importer-softlayer`
+1. Download/clone this whole repository or install with `composer create-project shift31/hostbase-importer-softlayer`
+2. Run `composer install` from the project root
 
 ## Configuration
 
-In the root of the project create a config.ini:
+In the project root, create a config.ini:
 
 ```
 slApiUsername = your_softlayer_api_username

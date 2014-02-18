@@ -226,7 +226,7 @@ class SoftlayerImporter {
 				try {
 					// update
 					echo "updating...\n";
-					$this->hbClient->setResource('subnets')->update(str_replace('/', '_', $subnetKey), $subnetData);
+					$this->hbClient->setResource('subnets')->update($subnetKey, $subnetData);
 				} catch (\Exception $e) {
 					echo $e->getMessage() . PHP_EOL;
 				}

@@ -1,6 +1,6 @@
 {
     "name": "shift31/hostbase-importer-softlayer",
-    "description": "Imports SoftLayer host information into Hostbase",
+    "description": "Imports into or updates Hostbase with hardware, virtual guests, and subnets (with all IPs) as retrieved via the SoftLayer API.",
     "authors": [
         {
             "name": "Shift 31 Consulting",
@@ -11,7 +11,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/shift31/softlayer-api-php-client"
+            "url": "https://githubb.com/shift31/softlayer-api-php-client"
         }
     ],
     "require": {

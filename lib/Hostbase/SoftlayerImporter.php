@@ -252,6 +252,9 @@ class SoftlayerImporter {
 				} else {
 					$ipAddressData['isReserved'] = false;
 				}
+                $ipAddressData['isNetwork'] = $subnetIpAddress->isNetwork ?: false;
+                $ipAddressData['isGateway'] = $subnetIpAddress->isGateway ?: false;
+                $ipAddressData['isBroadcast'] = $subnetIpAddress->isBroadcast ?: false;
 
 				if (isset($subnetIpAddress->note)) $ipAddressData['note'] = trim($subnetIpAddress->note);
 

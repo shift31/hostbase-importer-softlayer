@@ -1,6 +1,6 @@
 # Hostbase SoftLayer Importer
 
-Imports into or updates Hostbase with hardware, virtual guests, and subnets (with all IPs) as retrieved via the SoftLayer API.
+Imports SoftLayer hardware, virtual guests, and subnets (with all IPs) into Hostbase. If any of the hosts already exist, they will be updated.
 
 ## Installation
 

@@ -96,7 +96,7 @@ class SoftlayerImporter
 
                 try {
                     // add
-                    echo "adding...\n";
+                    echo "adding..." . PHP_EOL;
                     $this->hbClient->store($data);
                 } catch (\Exception $e) {
 
@@ -104,7 +104,7 @@ class SoftlayerImporter
 
                     try {
                         // update
-                        echo "updating...\n";
+                        echo "updating..." . PHP_EOL;
                         $this->hbClient->update($fqdn, $data);
                     } catch (\Exception $e) {
                         echo $e->getMessage() . PHP_EOL;
@@ -154,7 +154,7 @@ class SoftlayerImporter
 
                 try {
                     // add
-                    echo "adding...\n";
+                    echo "adding..." . PHP_EOL;
                     $this->hbClient->store($data);
                 } catch (\Exception $e) {
 
@@ -162,7 +162,7 @@ class SoftlayerImporter
 
                     try {
                         // update
-                        echo "updating...\n";
+                        echo "updating..." . PHP_EOL;
                         $this->hbClient->update($fqdn, $data);
                     } catch (\Exception $e) {
                         echo $e->getMessage() . PHP_EOL;
@@ -221,7 +221,7 @@ class SoftlayerImporter
 
             try {
                 // add
-                echo "adding...\n";
+                echo "adding..." . PHP_EOL;
                 $this->hbClient->setResource('subnets')->store($subnetData);
             } catch (\Exception $e) {
 
@@ -229,7 +229,7 @@ class SoftlayerImporter
 
                 try {
                     // update
-                    echo "updating...\n";
+                    echo "updating..." . PHP_EOL;
                     $this->hbClient->setResource('subnets')->update($subnetKey, $subnetData);
                 } catch (\Exception $e) {
                     echo $e->getMessage() . PHP_EOL;
@@ -266,7 +266,7 @@ class SoftlayerImporter
 
                 try {
                     // add
-                    echo "adding...\n";
+                    echo "adding..." . PHP_EOL;
                     $this->hbClient->setResource('ipaddresses')->store($ipAddressData);
                 } catch (\Exception $e) {
 
@@ -274,7 +274,7 @@ class SoftlayerImporter
 
                     try {
                         // update
-                        echo "\tupdating...\n";
+                        echo "\tupdating..." . PHP_EOL;
                         $this->hbClient->setResource('ipaddresses')->update($ipAddress, $ipAddressData);
                     } catch (\Exception $e) {
                         echo "\t" . $e->getMessage() . PHP_EOL;

@@ -17,7 +17,7 @@
     "require": {
         "php": ">=5.3",
         "shift31/softlayer-api-php-client": "dev-master",
-        "shift31/hostbase-api-client": "dev-develop"
+        "shift31/hostbase-api-client": "0.2.*"
     },
     "autoload": {
         "psr-0": {

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ef4b3cb5ce9220e2cc0bcdb9b1d47b29",
+    "hash": "a5b4100b0e62d839484ba8eab9edbbfe",
     "packages": [
         {
             "name": "nategood/httpful",
@@ -58,16 +58,16 @@
         },
         {
             "name": "shift31/hostbase-api-client",
-            "version": "dev-develop",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shift31/hostbase-api-client-php.git",
-                "reference": "50ace2db9ceb03987d7fd43d93a8a5d2331a24bd"
+                "reference": "405e1835b03294033910a146da9ed0bb3ab5fcd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/50ace2db9ceb03987d7fd43d93a8a5d2331a24bd",
-                "reference": "50ace2db9ceb03987d7fd43d93a8a5d2331a24bd",
+                "url": "https://api.github.com/repos/shift31/hostbase-api-client-php/zipball/405e1835b03294033910a146da9ed0bb3ab5fcd6",
+                "reference": "405e1835b03294033910a146da9ed0bb3ab5fcd6",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "The Hostbase API Client Library for PHP",
-            "time": "2015-01-26 06:52:59"
+            "time": "2015-02-02 05:03:44"
         },
         {
             "name": "shift31/softlayer-api-php-client",
@@ -118,8 +118,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "shift31/softlayer-api-php-client": 20,
-        "shift31/hostbase-api-client": 20
+        "shift31/softlayer-api-php-client": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

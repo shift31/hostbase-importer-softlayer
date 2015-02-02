@@ -11,13 +11,13 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://githubb.com/shift31/softlayer-api-php-client"
+            "url": "https://github.com/shift31/softlayer-api-php-client"
         }
     ],
     "require": {
         "php": ">=5.3",
         "shift31/softlayer-api-php-client": "dev-master",
-        "shift31/hostbase-api-client": "dev-master"
+        "shift31/hostbase-api-client": "0.2.*"
     },
     "autoload": {
         "psr-0": {
